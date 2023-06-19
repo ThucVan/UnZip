@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF7F9FF"
+        android:orientation="vertical"
+        tools:context=".ui.activities.DropboxActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/h1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/h2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_internal_storage_expanded"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@+id/h1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imvBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back"
+                tools:ignore="ContentDescription,NestedWeights" />
+
+            <TextView
+                android:id="@+id/tvTitleFolder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:fontFamily="@font/inter"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <ImageView
+                android:id="@+id/btnLogout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_logout"
+                tools:ignore="ContentDescription,NestedWeights" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvDropbox"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout2"
+            tools:listitem="@layout/item_dropbox" />
+
+        <LinearLayout
+            android:id="@+id/layout_upload"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/h2">
+
+            <TextView
+                android:id="@+id/tv_listupload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="@font/inter"
+                android:text="@string/upload"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

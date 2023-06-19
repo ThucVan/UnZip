@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_80sdp"
+    android:layout_height="@dimen/_40sdp"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_item_internal_folder"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imvThumbnails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_internal_folder_collapse"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:id="@+id/tvTitleFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/imvThumbnails"
+        android:fontFamily="@font/inter"
+        android:textColor="#050505"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/tvItemDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitleFolder"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/imvThumbnails"
+        android:fontFamily="@font/inter"
+        android:textColor="#797979"
+        android:textSize="@dimen/_8ssp" />
+</RelativeLayout>

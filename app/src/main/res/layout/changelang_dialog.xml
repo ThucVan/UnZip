@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:text="@string/alert_change_lang"
+        android:textColor="#050505"
+        android:textSize="@dimen/_14ssp" />
+
+    <LinearLayout
+        android:id="@+id/btn_en"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/_5sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_en"
+            tools:ignore="ContentDescription,NestedWeights,RtlSymmetry" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="start|center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/Eng"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/imvEnglishSelected"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_unselected"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_vn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/_5sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_vn"
+            tools:ignore="ContentDescription,NestedWeights,RtlSymmetry" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="start|center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/vn"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/imvVietnameseSelected"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_unselected"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+</LinearLayout>

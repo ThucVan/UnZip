@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_recycle_bin_expanded"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:text="@string/delete_notify"
+        android:textColor="#050505"
+        android:textSize="@dimen/_14ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights,UselessParent">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_button_dialog_unselected"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_12ssp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights,UselessParent">
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_button_dialog_unselected"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_12ssp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

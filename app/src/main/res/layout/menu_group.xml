@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_5sdp"
+        tools:ignore="InefficientWeight">
+
+        <ImageView
+            android:id="@+id/imvSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:id="@+id/tvSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:id="@+id/imvExpanded"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_expanded"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imvDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_view_nav"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>

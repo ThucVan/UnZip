@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_100sdp"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/imvThumbnails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imvSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_unselected"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvTimeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/inter"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+</androidx.cardview.widget.CardView>

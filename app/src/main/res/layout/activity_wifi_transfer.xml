@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F9FF"
+        android:orientation="vertical"
+        tools:context=".ui.activities.WifiTransferActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_internal_storage_expanded"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/imvBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back"
+                tools:ignore="ContentDescription,NestedWeights" />
+
+            <TextView
+                android:id="@+id/tvTitleFolder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:fontFamily="@font/inter"
+                android:gravity="center_vertical"
+                android:text="@string/wifi_transfer"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_bgWf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_backgroundwf"
+            android:src="@drawable/logo_wftransfer_on"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:thumb="@drawable/custom_thumb"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_bgWf"
+            app:layout_constraintVertical_bias="0.112"
+            app:track="@drawable/custom_track"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Button
+            android:id="@+id/btn_openSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_dialog_selected"
+            android:text="@string/setting"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/img_bgWf"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_bgWf"
+            app:layout_constraintVertical_bias="0.116" />
+
+        <TextView
+            android:id="@+id/alertText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:lineHeight="@dimen/_23sdp"
+            android:text="@string/textAlertwftransferoff"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_bgWf"
+            app:layout_constraintVertical_bias="0.471"
+            tools:ignore="UnusedAttribute"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/tv_showftp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_textview_showftp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:lineHeight="@dimen/_28sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/apk"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alertText"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="UnusedAttribute" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

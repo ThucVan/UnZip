@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/linear_file_all"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_filter_all"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="@string/all"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_file_zip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_filter_zip"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="@string/zip"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_file_rar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_filter_rar"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="@string/rar"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_file_7z"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_filter_7z"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="@string/seven_z"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_file_tar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_filter_tar"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="@string/tar"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_file_doc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_filter_doc"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="@string/doc"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_file_pdf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_filter_pdf"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="@string/pdf"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_file_pptx"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_filter_pptx"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="@string/pptx"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_file_excel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_filter_excel"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="@string/excel"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_file_txt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_filter_txt"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="@string/txt"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+</LinearLayout>

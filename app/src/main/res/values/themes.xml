@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Unzip" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+    <style name="ThemeNavigationView" >
+        <item name="android:listDivider">@drawable/ic_view_nav</item>
+    </style>
+    <style name="DialogStyle" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">0dp</item>
+        <item name="android:windowMinWidthMinor">0dp</item>
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">0dp</item>
+        <item name="android:windowMinWidthMinor">0dp</item>
+        <item name="android:windowBackground">@drawable/bg_filter_file</item>
+    </style>
+
+    <style name="PercentProgressBar_Passing">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#673AB7</item>
+
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#673AB7</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/bg_item_internal_folder_expanded"
+    android:padding="@dimen/_8sdp">
+
+    <ImageView
+        android:id="@+id/item_imgdropbox"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/ic_rar"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_toStartOf="@+id/btn_downloadItem"
+        android:layout_toEndOf="@+id/item_imgdropbox">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_nameitemdropbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/dropbox"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+
+    <ImageButton
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/btn_downloadItem"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:src="@drawable/ic_dowload" />
+</RelativeLayout>

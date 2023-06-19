@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="@dimen/_120sdp"
+    android:layout_margin="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imv_thumbnails"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_84sdp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_below="@id/imv_thumbnails"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:textColor="#050505"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_amount_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_below="@id/tv_title"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:textColor="#606060"
+            android:textSize="@dimen/_12ssp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

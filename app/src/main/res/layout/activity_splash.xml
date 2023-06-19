@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearOnBoarding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:background="#FFF7F9FF"
+        tools:context=".ui.activities.SplashActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/bg_on_boarding"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_on_boarding"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="@string/tv_title_on_boarding"
+                android:textColor="#050505"
+                android:textSize="@dimen/_16ssp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="@string/tv_intro"
+                android:textColor="#797979" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4.5"
+                tools:ignore="UselessLeaf">
+
+                <Button
+                    android:id="@+id/btnStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_background_color"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="@string/btn_get_start"
+                    android:textColor="@drawable/button_text_color" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        tools:context=".ui.fragments.ImageFragment">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imvMusic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_musical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_play_music"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                tools:ignore="NestedWeights,RtlSymmetry" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTimeCount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    tools:ignore="NestedWeights" />
+
+                <SeekBar
+                    android:id="@+id/seekBarTime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="7"
+                    android:progressDrawable="@drawable/seekbar"
+                    android:thumb="@drawable/thumb_play" />
+
+                <TextView
+                    android:id="@+id/tvFullTime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/imvLooping"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_loop_unselected"
+                    tools:ignore="ContentDescription,NestedWeights" />
+
+                <ImageView
+                    android:id="@+id/imvPrevious"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_previous"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/imvPlay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_play"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/imvNext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_next"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/imvShare"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_share"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

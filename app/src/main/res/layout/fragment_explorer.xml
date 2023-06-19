@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.ExplorerFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_gravity="top"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:weightSum="2"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:id="@+id/linearImage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_image_folder"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:text="@string/image"
+                        android:textColor="#FF050505"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvImageAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:textColor="#FFF7F9FF"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearVideo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_video_folder"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:text="@string/video"
+                        android:textColor="#FF050505"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvVideoAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:textColor="#FFF7F9FF"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearAudio"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_audio_folder"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:text="@string/audio"
+                        android:textColor="#FF050505"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAudioAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:textColor="#FFF7F9FF"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearDocument"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_document_folder"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:text="@string/document"
+                        android:textColor="#FF050505"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDocumentAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:textColor="#FFF7F9FF"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDownload"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_download_folder"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:text="@string/download"
+                        android:textColor="#FF050505"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDownloadAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:textColor="#FFF7F9FF"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearApk"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_apk_folder"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:text="@string/apk"
+                        android:textColor="#FF050505"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvApkAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center_horizontal"
+                        android:textColor="#FFF7F9FF"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

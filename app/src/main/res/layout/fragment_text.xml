@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.TextFragment">
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdfView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ScrollView
+            android:id="@+id/scrollText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:justificationMode="inter_word"
+                android:paddingTop="@dimen/_30ssp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="UnusedAttribute" />
+
+        </ScrollView>
+    </FrameLayout>
+</layout>

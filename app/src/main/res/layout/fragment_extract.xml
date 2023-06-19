@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.ExtractFragment">
+
+        <io.netopen.hotbitmapgg.library.view.RingProgressBar
+            android:id="@+id/progressExtracted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:max="100"
+            app:ringColor="@android:color/darker_gray"
+            app:ringProgressColor="@color/blue"
+            app:textColor="@color/white"
+            app:textSize="@dimen/_16ssp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_install"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_width="@dimen/_100sdp">
+        </ProgressBar>
+
+    </FrameLayout>
+</layout>

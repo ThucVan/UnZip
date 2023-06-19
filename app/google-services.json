@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "671373213590",
+    "project_id": "unzip-38194",
+    "storage_bucket": "unzip-38194.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671373213590:android:9e720ecea47714b97ee7b7",
+        "android_client_info": {
+          "package_name": "com.thaiduong.unzip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671373213590-lpafktqog7g5kq118f3o0hvfme7vuv3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thaiduong.unzip",
+            "certificate_hash": "eea295f70026e46e43697df354d65f0949bfd766"
+          }
+        },
+        {
+          "client_id": "671373213590-e0f1b5jq4a83mp8fvlb9vc7g7agpjjfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0MLScfYVAJzo5hAEmTweNJa1Df304HW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671373213590-e0f1b5jq4a83mp8fvlb9vc7g7agpjjfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

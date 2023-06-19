@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF7F9FF"
+        tools:context=".ui.activities.InstallActivity">
+
+        <RelativeLayout
+            android:id="@+id/relative_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/progressExtracted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:max="100"
+                app:ringColor="@android:color/darker_gray"
+                app:ringProgressColor="@color/blue"
+                app:textColor="@color/blue"
+                app:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressExtracted"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="@string/install_notify"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_install_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="10">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+                <ImageButton
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center|bottom"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_install_result"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="@string/install_result"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+
+                <Button
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/bg_button_dialog_unselected"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="@string/accept"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_12ssp" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

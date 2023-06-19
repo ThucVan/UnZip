@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:weightSum="7">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/tvApp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/tvSongName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imvPrevious"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_notify_previous"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imvPlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_notify_play"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imvNext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_notify_next"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imvClose"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_notify_close"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

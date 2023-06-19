@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF7F9FF"
+        tools:context=".ui.activities.FileListActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/h1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/h2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="1" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_internal_storage_expanded"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintBottom_toTopOf="@+id/h1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imvBack"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_back"
+                    tools:ignore="ContentDescription,NestedWeights" />
+
+                <TextView
+                    android:id="@+id/tvTitleFolder"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+
+                <ImageView
+                    android:id="@+id/imv_filter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_filter"
+                    tools:ignore="ContentDescription,NestedWeights" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/frameList"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/h2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/h1"
+                tools:context=".ui.activities.FileListActivity">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvInternalFolder"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toTopOf="@id/btn_clear_all"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/item_file_expanded" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:visibility="gone"
+                    app:background="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/view_pager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tabGravity="fill"
+                    app:tabIndicator="@drawable/tab_indicator"
+                    app:tabIndicatorAnimationMode="elastic"
+                    app:tabIndicatorColor="@color/blue"
+                    app:tabIndicatorGravity="stretch"
+                    app:tabMode="fixed"
+                    app:tabRippleColor="@null"
+                    app:tabSelectedTextColor="@color/white" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_pager"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+
+                <ImageView
+                    android:id="@+id/imvNoFilesFound"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_file_not_found"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+                <ScrollView
+                    android:id="@+id/scrollContentSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:fillViewport="true"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvContentSetting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        tools:ignore="UnusedAttribute" />
+
+                </ScrollView>
+
+                <ImageView
+                    android:id="@+id/imvExtractedSuccess"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_extracted_success"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/imvExtractedFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_extracted_failed"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="ContentDescription" />
+
+                <Button
+                    android:id="@+id/btn_clear_all"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginHorizontal="@dimen/_70sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/bg_button_dialog_unselected"
+                    android:drawableStart="@drawable/ic_clear_all"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_50sdp"
+                    android:text="@string/clearAll"
+                    android:textAllCaps="false"
+                    android:textColor="#127AF1"
+                    android:textSize="@dimen/_12ssp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rcvInternalFolder"
+                    tools:ignore="ButtonStyle,NestedWeights" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/layout_function"
+            layout="@layout/bottom_sheet_menu" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

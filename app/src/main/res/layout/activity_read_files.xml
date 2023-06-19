@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".ui.activities.ReadFilesActivity">
+
+    <FrameLayout
+        android:id="@+id/constraintScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessLeaf" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvIndex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:fontFamily="@font/inter"
+        android:paddingVertical="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+
+</FrameLayout>
+    </layout>

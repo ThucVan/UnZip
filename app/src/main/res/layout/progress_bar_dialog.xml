@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_5sdp"
+    android:weightSum="3.2">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:ignore="NestedWeights">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter"
+            android:gravity="start|center_vertical"
+            android:text="@string/progress"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter"
+            android:gravity="end|center_vertical"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/bg_progress"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/bg_progress_download" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1" />
+</LinearLayout>

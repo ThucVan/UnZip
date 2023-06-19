@@ -1,0 +1,288 @@
+<resources>
+    <string name="app_name">Unzip</string>
+    <string name="tv_title_on_boarding">Welcome to UnZip!</string>
+    <string name="tv_intro">Unzip can extract ZIP, RAR, 7Z, TAR and all other compressed files. Supports split archives for certain formats.</string>
+    <string name="btn_get_start">Get started!</string>
+    <string name="tv_internal_storage">Internal Storage</string>
+    <string name="categories">Categories</string>
+    <string name="Compressed">Compressed</string>
+    <string name="Compressing">Compressing</string>
+    <string name="extracted">Extracted</string>
+    <string name="file_explorer">File Explorer</string>
+    <string name="google_driver">Google Driver</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="recently">Recently</string>
+    <string name="see_all">See all</string>
+    <string name="recycle_bin">Recycle Bin</string>
+    <string name="setting">Setting</string>
+    <string name="show_recently">Show Recently</string>
+    <string name="language">Language</string>
+    <string name="privavy_policy">Privavy Policy</string>
+    <string name="term">Term of Use</string>
+    <string name="contact">Contact Us</string>
+    <string name="shareApp">Share This App</string>
+    <string name="share">Share</string>
+    <string name="review">Write a review</string>
+    <string name="english">English</string>
+    <string name="no_files_found">NO FILES FOUND</string>
+    <string name="open_permission">Open setting permissions</string>
+    <string name="guideTurnOnPermission" translatable="false"><![CDATA[Please turn on permission at [Setting] > [Permission]]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="delete">Delete</string>
+    <string name="rotating">Rotating</string>
+    <string name="detail">Detail</string>
+    <string name="tv_recycle_bin">Recycle Bin</string>
+    <string name="delete_notify">"Files will be delete forever. "</string>
+    <string name="cancel">Cancel</string>
+    <string name="restock">Restock</string>
+    <string name="restore_notify">Are you sure to restock this file?</string>
+    <string name="rename">Rename</string>
+    <string name="move_recycle_bin_notify">Move file to Recycle Bin?</string>
+    <string name="delete_permanently">Delete permanently</string>
+    <string name="term_content" translatable="false">
+        <![CDATA[ <p><strong>Terms of Use</strong></p>
+        <p>If you continue to use this application , you are agreeing to comply with and be bound by
+            the following terms and conditions of use, which together with our privacy policy govern
+            app relationship with you in relation to this application. If you disagree with any part
+            of these terms and conditions, please do not use our application.</p>
+
+
+        <p>This is a security service and we do not guarantee to give you %100 security. It was
+            designed to protect your conversations and having them backed up on encrypted cloud
+            platform. You accept that we do not guarantee to give you exact results by downloading
+            and upgrading your membership. Keep in mind that this app does not add a passcode to the
+            original applications, only the imported conversations of your choice.</p>
+
+
+        <p><strong>Links To Other Web Sites</strong><br> We have no control over, and assumes no
+            responsibility for, the content, privacy policies, or practices of any third party web
+            sites or services. You further acknowledge and agree that Ontrack SUNTECH LTD. shall not
+            be responsible or liable, directly or indirectly, for any damage or loss caused or
+            alleged to be caused by or in connection with use of or reliance on any such content,
+            goods or services available on or through any such web sites or services. We strongly
+            advise you to read the terms and conditions and privacy policies of any third party web
+            sites or services that you visit.</p>
+
+
+        <p><strong>Law</strong><br> These Terms constitute the entire agreement between us regarding
+            our Service, and supersede and replace any prior agreements we might have between us
+            regarding the Service.</p>
+
+
+        <p><strong>Changes</strong><br> We reserve the right, at our sole discretion, to modify or
+            replace these Terms at any time. Any changes to the Terms will be effective immediately.
+            By continuing to access or use our Service after those revisions become effective, you
+            agree to be bound by the revised terms. If you do not agree to the new terms, please
+            stop using the Service.</p>
+
+
+        <p><strong>Warranty Disclaimer</strong><br> This is an unofficial product. Any product
+            names, logos, brands, and other trademarks or images featured or referred to within this
+            app are the property of their respective trademark holders. Any of these trademark
+            holders are not affiliated This is app, our products, or with us. They do not sponsor or
+            endorse this app or any of our online products. Neither we nor any third parties provide
+            any warranty or guarantee as to the accuracy, timeliness, performance, completeness or
+            suitability of the information and materials found or offered in this app for any
+            particular purpose.<br> Your use of any information or materials in this app is entirely
+            at your own risk, for which we shall not be liable. It shall be your own responsibility
+            to ensure that any products, services or information available through this app meet
+            your specific requirements.</p>
+
+
+        <p><strong>Free Trial</strong> <br>Suntech provides a FREE TRIAL period during which you can
+            use all features of the service for a limited period of time. You can manage or cancel
+            the trial subscription through your App Store account. </p>
+
+
+        <p><strong>Payment</strong><br> We services are provided through the APP STORE on a
+            paid subscription basis. We rates for services are listed in the App and on the App
+            Store. We reserves the right to modify its rates at any time and/or to offer
+            special promotions. We does not issue refunds for services. We does not send
+            invoices to its customers. Instead, you have confidential access to your account balance
+            information through the App Store. If you have a billing dispute, you must contact the
+            App Store to seek a remedy. </p>
+
+
+        <p><strong>Contact us</strong><br> If you have questions regarding this privacy policy, you
+            may email suntectltd.software@gmail.com<br> Phone number: 0353358792<br> Room 601, Lot
+            B12D21, Cau Giay New Urban Area, Dich Vong Hau Ward, Cau Giay, Hanoi</p>]]>
+    </string>
+    <string name="policy_content" translatable="false">
+        <![CDATA[ <p><strong>Privacy Policy</strong></p>
+
+        <p>Your privacy is important to Our App Service. Our Privacy Policy covers how we collect,
+        use, disclose, transfer, and store your information. We hope our policy is straightforward
+        and easy-to-understand. Please take a minute to review the details of our privacy practices
+        below.</p>
+
+        <p><strong>How We Collect Information</strong><br>
+        We collect information in order to provide you with better, higher-quality, and more
+        personalized services. We collect information by the following means:<br>
+        1. When you use our email support services, we collect your correspondence in order to
+        build up a public knowledge base, which will be available to all users of the site. Your
+        correspondence will most likely not be used verbatim, but paraphrased in an FAQ format.<br>
+        2. The data we collect depends on the context of your interactions with us, the choices you
+        make, including your privacy settings, and the products and features you use. The data we
+        collect can include SDK/API/JS code version, browser, Internet service provider, IP
+        address, platform, timestamp, application identifier, application version, application
+        distribution channel, independent device identifier, Android ad master identifier, network
+        card (MAC) address, and international mobile device identification code(IMEI/android
+        ID/IDFA/OPENUDID/GUID, SIM card IMSI information)to provide statistical analysis services,
+        and the accuracy of report data is calibrated by geographic location to provide basic
+        anti-cheating capabilities. The equipment model, the terminal manufacturer, the terminal
+        device operating system version, the session start/stop time, the location of the language,
+        the time zone and the network state (WiFi and so on), the hard disk, the CPU, and the
+        battery use, etc.
+        </p>
+
+        <p><strong>How We Use Information</strong><br>
+        We use the information collected through this app product: (I) to communicate with you;
+        (II) to process your requests and transactions; (III) to improve the app; (IV) to customize
+        the services and/or products we provide to you; (V) to assist with our product and service
+        development; (VI) to perform marketing analysis; and (VII) for other purposes related to
+        our business.<br>
+        Our product integrates Youmeng+ SDK to provide statistical analysis services and calibrate
+        the accuracy of report data through geographic location to provide basic anti-cheating
+        capabilities.
+        </p>
+
+        <p><strong>Third party accounts</strong><br>
+        Our App Service does not store any other third part service passwords. Your account
+        information is not disclosed to this app and you are free to cancel any of your social
+        networking website connections with this app at any time.
+        </p>
+
+        <p><strong>Sharing of personal data</strong><br>
+        To improve our product and provide you better service, we also share personal data with
+        vendors or agents working on our behalf for the purposes described in this privacy policy.
+        For example, companies we&#39;ve hired to provide data analytical services may need collect
+        and access to personal data to provide those functions. In such cases, these companies must
+        abide by our data privacy and security requirements.
+        </p>
+
+        <p><strong>Legal basis for data processing</strong><br>
+        We process Personal Data for the purposes set out in this Privacy Policy, as described
+        above. Our legal basis to process personal data includes processing that is: necessary for
+        the performance of the contract with you (for example, to provide you with the services you
+        request and to identify and authenticate you so you may use the Sites); necessary to comply
+        with legal requirements (for example, to comply with applicable accounting rules and to
+        make mandatory disclosures to law enforcement); necessary for our legitimate interests (for
+        example, to manage our relationship with you, to ensure the security of our services, to
+        communicate with you about our products and services); and based on consent by our
+        customers (for example, to place certain cookies and to share your information with third
+        parties for advertising purposes).<br>
+        In some instances, you may be required to provide us with Personal Data for processing as
+        described above, in order for us to be able to provide you all of our services, and for you
+        to use all the features of our App.
+        </p>
+
+        <p><strong>International transfers of personal data</strong><br>
+        Our business may require us to transfer your Personal Data to countries outside of the
+        European Economic Area (&#34;EEA&#34;), including to countries such as the People&#39;s
+        Republic of China or Singapore. We take appropriate steps to ensure that recipients of your
+        Personal Data are bound to duties of confidentiality and we implement measures such as
+        standard contractual clauses. A copy of those clauses can be obtained by contacting our
+        Help Center.
+        </p>
+
+        <p><strong>Your rights</strong><br>
+        Subject to limitations in applicable law, you are entitled to object to or request the
+        restriction of processing of your Personal Data, and to request access to, rectification,
+        erasure and portability of your own Personal Data.<br>
+        Where the use of your information is based on consent, you can withdraw this consent at any
+        time without affecting the lawfulness of processing based on consent before its
+        withdrawal.<br>
+        Requests should be submitted by contacting us through our developer account e-Mail on
+        Google Play.<br>
+        If you are aware of changes or inaccuracies in your information, you should inform us of
+        such changes so that our records may be updated or corrected. You may lodge a complaint
+        with a supervisory authority if you consider that our processing of your Personal Data
+        infringes applicable law.<br>
+        We retain your Personal Data as long as needed to provide services or products to you, or
+        as required or permitted by applicable laws, such as tax and accounting laws.
+        </p>
+
+        <p><strong>Transparency and Choice</strong><br>
+        You can also control which social websites you wish to share or upload.
+        </p>
+
+        <p><strong>Changes</strong><br>
+        Our Privacy Policy may change occasionally. We will not reduce your rights under this
+        Privacy Policy without providing explicit, advance notice. We will post any privacy policy
+        changes on this page and, in the event of significant changes, we will provide a more
+        prominent notice (such as an email notification).<br>
+        If you have any questions regarding this Privacy Policy, please feel free to contact us.
+        </p>]]>
+    </string>
+    <string name="tv_file_name">Name</string>
+    <string name="tv_file_path">Path</string>
+    <string name="tv_file_size">Size</string>
+    <string name="tv_file_modification_date">Modification date</string>
+    <string name="tv_file_resolution">Resolution</string>
+    <string name="exit">Exit</string>
+    <string name="slash_symbol" translatable="false">/</string>
+    <string name="extract">Extract</string>
+    <string name="edit_name">Name…</string>
+    <string name="tv_pass_word">Password</string>
+    <string name="edit_pass_word">Please enter if your file has a password</string>
+    <string name="clearAll">Clear all</string>
+    <string name="export">Export</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="explorer">File explorer</string>
+    <string name="file_name">File name</string>
+    <string name="file_password">Password</string>
+    <string name="archive_fromat">Archive format</string>
+    <string name="six_items">6 items</string>
+    <string name="image">Image</string>
+    <string name="video" translatable="false">Video</string>
+    <string name="audio">Audio</string>
+    <string name="document">Document</string>
+    <string name="download">Download</string>
+    <string name="apk" translatable="false">Apk</string>
+    <string name="btn_add_account">Add account</string>
+    <string name="search_hint">Enter the name of the file or folder you want to search for…</string>
+    <string name="zip" translatable="false">Zip</string>
+    <string name="rar" translatable="false">Rar</string>
+    <string name="seven_z" translatable="false">.7z</string>
+    <string name="tar" translatable="false">Tar</string>
+    <string name="doc" translatable="false">Doc</string>
+    <string name="pdf" translatable="false">PDF</string>
+    <string name="pptx" translatable="false">PowerPoint</string>
+    <string name="excel" translatable="false">Excel</string>
+    <string name="txt" translatable="false">Txt</string>
+    <string name="accept_replace">Replace the file in the destination</string>
+    <string name="skip">Skip this file</string>
+    <string name="tv_restore_title">Replace or Skip Files</string>
+    <string name="select">Select</string>
+    <string name="done">Done</string>
+    <string name="all">All</string>
+    <string name="install_notify">The app is being installed</string>
+    <string name="install_result">The application has been installed successfully</string>
+    <string name="accept">Accept</string>
+    <string name="tv_alert">Currently, we only support Zip files with passwords, please choose the .zip format to support Zip files with passwords.</string>
+    <string name="progress">Progress</string>
+    <string name="cannot_read_file">Sorry, Unzip can\'t read this file</string>
+    <string name="ok">OK</string>
+    <string name="name">Name…</string>
+    <string name="password">Password</string>
+    <string name="wifi_transfer" translatable="false">Wifi transfer</string>
+    <string name="textAlertwftransferoff">Please turn in the button to work</string>
+    <string name="textAlertwftransferwfoff">Please make sure that you are connected to Wifi</string>
+    <string name="textAlertwftransferon">Copy and paste the following URL into your FTP Client or Windows file explorer</string>
+    <string name="alert_signOutDropbox">Do you want to sign out of DropBox?</string>
+    <string name="sign_out">Sign out</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="file_selceted">You have just selected</string>
+    <string name="tv_fileselected">Open to the folder you need, then press \'Upload\'</string>
+    <string name="file">file</string>
+    <string name="alert_change_lang">Select Languages</string>
+    <string name="Eng">English</string>
+    <string name="vn">Vienamese</string>
+    <string name="alert_changelang">Select Languages</string>
+    <string name="upload">Upload</string>
+    <string name="change_lanng">English</string>
+    <string name="item">item</string>
+    <string name="items">items</string>
+    <string name="google_drive_notify">This feature will now be updated in the near future. We are very sorry for this inconvenience</string>
+</resources>
